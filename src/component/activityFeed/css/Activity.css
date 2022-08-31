@@ -14,13 +14,15 @@
 .activityFeed-nav {
     display: flex;
     margin: 10px;
-    margin-left: 25%;
+    justify-content: center;
 }
 
 .activityFeed-nav button {
     background-color: rgb(42, 156, 172);
     border-radius: 20px;
     margin-left: 10px;
+    font-weight: bolder;
+    font-size: 20px;
 }
 
 .activityFeed-nav button:hover {
@@ -35,6 +37,7 @@
     border-radius: 10px;
     margin: 10px;
     padding-left: 10px;
+    background-color: rgb(162, 168, 143);
 }
 
 .activity-call-icon {
