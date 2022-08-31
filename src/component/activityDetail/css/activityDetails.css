@@ -1,0 +1,37 @@
+.activity-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 50px;
+}
+
+.activity-details-info {
+    width: 100%;
+    margin: 10px;
+}
+
+.activity-details-info h2 {
+    text-align: justify;
+    font-weight: bolder;
+    color: rgb(122, 131, 253);
+    padding: 10px;
+}
+
+.activity-details-info span {
+    text-align: justify;
+    font-weight: bolder;
+    color: rgb(150, 0, 236);
+    padding-left: 10px;
+}
+
+.activity-details-back {
+    align-self: center;
+    height: 30px;
+    border-radius: 20px;
+    background-color: rgb(182, 121, 240);
+}
+
+.activity-details-back:hover  {
+    background-color:rgb(230, 212, 247) ;
+}
+
