@@ -1,8 +1,5 @@
 import React from "react";
 import "./css/Activity.css";
-import callIcon from "../../../public/icons/phone.png";
-import missedCallIcon from "../../../public/icons/missed-call.png";
-import voiceMailIcon from "../../../public/icons/voicemail.png";
 import { useNavigate } from "react-router-dom";
 
 export const Activity = ({ activity, isArchivedList, archive, unArchive }) => {
@@ -17,12 +14,12 @@ export const Activity = ({ activity, isArchivedList, archive, unArchive }) => {
 
 
     return (
-        <div className="activity">
+        <div>
             <div className="activity-call">
                 <div className="activity-call-icon">
-                    {activity.call_type === "voicemail" && <img src={require("/public/icons/voicemail.png")} alt="voice mail"/>}
-                    {activity.call_type === "missed" && <img src={require("/public/icons/missed-call.png")} alt="missed call"/>}
-                    {activity.call_type === "answered" && <img src={require("/public/icons/phone.png")} alt="answered call"/>}
+                    {activity.call_type === "voicemail" && <img src="https://cdn-icons-png.flaticon.com/512/2934/2934436.png" alt="voice mail"/>}
+                    {activity.call_type === "missed" && <img src="https://cdn-icons-png.flaticon.com/512/2227/2227858.png" alt="missed call"/>}
+                    {activity.call_type === "answered" && <img src="https://cdn-icons-png.flaticon.com/512/483/483947.png" alt="answered call"/>}
                 </div>
                 <div className="activity-call-info" onClick={() => { showCallDetails(activity.id) }}>
                     <h2>{activity.from}</h2>

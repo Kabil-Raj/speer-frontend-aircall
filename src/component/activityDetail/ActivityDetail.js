@@ -25,7 +25,7 @@ export const ActivityDetail = () => {
                 <h2>Duration: <span>{callDetails.duration / 60} min {callDetails.duration % 60} sec</span></h2>
                 <h2>Direction: <span>{callDetails.direction}</span></h2>
                 <h2>Via: <span>{callDetails.via}</span></h2>
-                <h2>Archived: <span>{callDetails.is_archived}</span></h2>
+                <h2>Archived: <span>{callDetails.is_archived?"true":"false"}</span></h2>
                 <h2>Call Type: <span>{callDetails.call_type}</span></h2>
                 <h2>Created At: <span>{new Date(callDetails.created_at).getHours() + ":" + new Date(callDetails.created_at).getMinutes()}</span></h2>
             </div>
