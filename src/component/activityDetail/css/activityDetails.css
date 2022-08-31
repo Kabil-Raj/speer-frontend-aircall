@@ -10,9 +10,19 @@
     margin: 10px;
 }
 
+.activity-details-info h1{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bolder;
+    color: black;
+    margin: 10px;
+}
+
 .activity-details-info h2 {
+    margin: 10px 0px;
     text-align: justify;
     font-weight: bolder;
+    font-size: 15px;
     color: rgb(122, 131, 253);
     padding: 10px;
 }
@@ -21,17 +31,26 @@
     text-align: justify;
     font-weight: bolder;
     color: rgb(150, 0, 236);
+    font-size: 15px;
     padding-left: 10px;
 }
 
 .activity-details-back {
     align-self: center;
-    height: 30px;
     border-radius: 20px;
-    background-color: rgb(182, 121, 240);
+    background-color: rgb(210, 171, 247);
+    font-weight: bolder;
+    color: black;
+    font-size: 30px;
+    text-decoration: none;
 }
+
 
 .activity-details-back:hover  {
     background-color:rgb(230, 212, 247) ;
+}
+
+.activity-details-back-link {
+    text-decoration: none;
 }
 

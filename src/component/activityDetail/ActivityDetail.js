@@ -20,6 +20,7 @@ export const ActivityDetail = () => {
     return (
         <div className="activity-details">
             <div className="activity-details-info">
+                <h1>Call Details</h1>
                 <h2>From:  <span>{callDetails.from}</span></h2>
                 <h2>To: <span>{callDetails.to}</span></h2>
                 <h2>Duration: <span>{callDetails.duration / 60} min {callDetails.duration % 60} sec</span></h2>
@@ -29,7 +30,7 @@ export const ActivityDetail = () => {
                 <h2>Call Type: <span>{callDetails.call_type}</span></h2>
                 <h2>Created At: <span>{new Date(callDetails.created_at).getHours() + ":" + new Date(callDetails.created_at).getMinutes()}</span></h2>
             </div>
-            <button className="activity-details-back"><Link to="/">Back</Link></button>
+            <button className="activity-details-back"><Link to="/" className="activity-details-back-link">Back</Link></button>
         </div>
     )
 } 
