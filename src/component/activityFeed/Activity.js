@@ -21,9 +21,9 @@ export const Activity = ({ activity, isArchivedList, archive, unArchive }) => {
         <div className="activity">
             <div className="activity-call">
                 <div className="activity-call-icon">
-                    {activity.call_type === "voicemail" && <img src={voiceMailIcon} alt="voice mail"/>}
-                    {activity.call_type === "missed" && <img src={missedCallIcon} alt="missed call"/>}
-                    {activity.call_type === "answered" && <img src={callIcon} alt="answered call"/>}
+                    {activity.call_type === "voicemail" && <img src={require(voiceMailIcon)} alt="voice mail"/>}
+                    {activity.call_type === "missed" && <img src={require(missedCallIcon)} alt="missed call"/>}
+                    {activity.call_type === "answered" && <img src={require(callIcon)} alt="answered call"/>}
                 </div>
                 <div className="activity-call-info" onClick={() => { showCallDetails(activity.id) }}>
                     <h2>{activity.from}</h2>
