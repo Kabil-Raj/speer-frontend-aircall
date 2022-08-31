@@ -12,7 +12,6 @@ export const Activity = ({ activity, isArchivedList, archive, unArchive }) => {
     const navigate = useNavigate();
 
     const showCallDetails = (callId) => {
-        console.log(" ca " + callId)
         navigate("/call/details/" + callId)
     }
 
@@ -21,9 +20,9 @@ export const Activity = ({ activity, isArchivedList, archive, unArchive }) => {
         <div className="activity">
             <div className="activity-call">
                 <div className="activity-call-icon">
-                    {activity.call_type === "voicemail" && <img src={require("../../../public/icons/voicemail.png")} alt="voice mail"/>}
-                    {activity.call_type === "missed" && <img src={require("../../../public/icons/missed-call.png")} alt="missed call"/>}
-                    {activity.call_type === "answered" && <img src={require("../../../public/icons/phone.png")} alt="answered call"/>}
+                    {activity.call_type === "voicemail" && <img src={require("/public/icons/voicemail.png")} alt="voice mail"/>}
+                    {activity.call_type === "missed" && <img src={require("/public/icons/missed-call.png")} alt="missed call"/>}
+                    {activity.call_type === "answered" && <img src={require("/public/icons/phone.png")} alt="answered call"/>}
                 </div>
                 <div className="activity-call-info" onClick={() => { showCallDetails(activity.id) }}>
                     <h2>{activity.from}</h2>
