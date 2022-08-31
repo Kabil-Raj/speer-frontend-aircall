@@ -5,7 +5,6 @@ const api = "https://aircall-job.herokuapp.com"
 class ActivitiesApi {
 
     GetAllCallActivities() {
-        console.log(" activities ")
         return axios.get(api+"/activities")
     }
 
@@ -19,7 +18,7 @@ class ActivitiesApi {
         }
         axios.post(api + "/activities/" + callId, callDetail)
         .then(response => {
-            console.log(response.data)
+            console.log(" Post response " +response.data)
         })
     }
 }
